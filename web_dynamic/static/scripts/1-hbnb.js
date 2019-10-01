@@ -2,7 +2,7 @@ $( document ).ready(function() {
   myIds = []
   myNames = []
   let flag;
-  $("INPUT").on( 'change', function() {
+  $("UL.popover INPUT").on( 'change', function() {
     if( $(this).is(':checked') ) {
         myIds.push($(this).attr('data-id'));
 	myNames.push($(this).attr('data-name'));
