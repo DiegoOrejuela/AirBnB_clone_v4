@@ -2,11 +2,11 @@ $( document ).ready(function() {
   myIds = []
   myNames = []
   let flag;
-  $.getJSON('http://0.0.0.0:5001/api/v1/status/', function( data ) {
+  $.getJSON('http://localhost:5001/api/v1/status/', function( data ) {
     if (data.status === 'OK') {
-      $(DIV#api_status).addClass(available);
+      $("DIV#api_status").addClass('available');
     } else {
-      $(DIV#api_status).removeClass(available);
+      $("DIV#api_status").removeClass('available');
     }
   });
   $("UL.popover INPUT").on( 'change', function() {
